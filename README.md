@@ -78,6 +78,11 @@ This pipeline relies on python and perl as well as requiring the installation of
 ```
 
 ## Minimal arguments for running CasCollect
+
+The default run for **CasCollect** is in protein mode.
+
+## Protein Mode:
+
 ### With paired-end data is:
 ```
 python CasCollect.py -fwd file.fastq -rev file.fastq -out folder
@@ -87,3 +92,45 @@ python CasCollect.py -fwd file.fastq -rev file.fastq -out folder
 python CasCollect.py - single file.fastq -out folder
 ```
 This will run **CasCollect** for the specified fastq files to search the default 120 Cas protein HMMs with 5 cycles of seed expansion on 1 cpu and 20 Gb RAM outputting all resulting into the specified folder.
+
+### To specify the HMM file(s):
+```
+python CasCollect.py -fwd file.fastq -rev file.fastq -out folder -hmm hmm_dir
+```
+This will run **CasCollect** using all the HMM files in the specified directory.
+
+## DNA Mode:
+
+### With paired-end data is:
+```
+python CasCollect.py -fwd file.fastq -rev file.fastq -out folder --noprot --nucl -query file.fasta
+```
+### With single-end data is:
+```
+python CasCollect.py - single file.fastq -out folder --noprot --nucl -query file.fasta
+```
+This will run **CasCollect** only for the DNA mode, searching with the query file.  No protein search.
+
+## User-defined Mode:
+
+### With paired-end data is:
+```
+python CasCollect.py -fwd file.fastq -rev file.fastq -out folder --noprot --seed -define file.fasta
+```
+### With single-end data is:
+```
+python CasCollect.py - single file.fastq -out folder --noprot --seed -define file.fasta
+```
+This will run **CasCollect** only for the User-defined mode, using the define file as the seeds for seed exapnsion and assembly.  No protein or DNA search.
+
+## Combined Protein/DNA/User-defined mode:
+
+### With paired-end data is:
+```
+python CasCollect.py -fwd file.fastq -rev file.fastq -out folder --nucl -query file.fasta --seed -define file.fasta
+```
+### With single-end data is:
+```
+python CasCollect.py - single file.fastq -out folder --nucl -query file.fasta --seed -define file.fasta
+```
+This will run **CasCollect** in Protein, DNA, and User-defined mode.  All the seeds generated from this mode will be combined and used for the downstream seed expansion and assembly.
