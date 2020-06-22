@@ -11,7 +11,7 @@ This pipeline relies on python and perl as well as requiring the installation of
 + SPAdes
 + CRISPRCasFinder
 
-Before running, **CasCollect** will check for the necessary software in the users path and denote any missing software.  Alternatively, the **Check.py** script can be run to check for the necessary software in the users path with any missing software automatically downloaded and extracted using the **Check.py** script.  The user is then responsible for installing each piece of software and ensuring it is in their path.
+Before running, **CasCollect** will check for the necessary software in the users path and denote any missing software.  Alternatively, the **Check.py** script can be run to check for the necessary software in the users path with any missing software automatically downloaded and extracted.  The user is then responsible for installing each piece of software and ensuring it is in their path.
 
 ## optional arguments:
 ```
