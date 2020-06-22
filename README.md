@@ -14,7 +14,7 @@ This pipeline relies on python and perl as well as requiring the installation of
 These software can be automatically downloaded and extracted using the **Check.py** script.  The user is responsible for installing each piece of software.
 
 ## optional arguments:
-
+```
   -h, --help          show this help message and exit
 
 ### flags for read trimming/cleaning
