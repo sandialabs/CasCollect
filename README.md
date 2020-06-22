@@ -11,7 +11,7 @@ This pipeline relies on python and perl as well as requiring the installation of
 + SPAdes
 + CRISPRCasFinder
 
-These software can be automatically downloaded and extracted using the check.py script.  The user is responsible for installing each piece of software.
+These software can be automatically downloaded and extracted using the **Check.py** script.  The user is responsible for installing each piece of software.
 
 ## optional arguments:
 
