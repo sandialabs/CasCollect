@@ -16,7 +16,7 @@ These software can be automatically downloaded and extracted using the **Check.p
 ## optional arguments:
 ```
   -h, --help          show this help message and exit
-
+```
 ### flags for read trimming/cleaning
 ```
   --trim              runs quality trim, remove adapters, merge overlapping
