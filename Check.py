@@ -130,9 +130,9 @@ else:
         print('Cannot automatically download CRISPRCasFinder.\nPlease manually download from <https://crisprcas.i2bc.paris-saclay.fr/Home/DownloadFile?filename=CRISPRCasFinder.zip>')
         crisprcasfinder = 0
 if crisprcasfinder == 1:
-    crisprcasfinder = zipfile.ZipFile('crisprcasfinder-DownloadFile?filename=CRISPRCasFinder.zip')
+    crisprcasfinder = zipfile.ZipFile('CRISPRCasFinder.zip')
     crisprcasfinder.extractall('.')
     crisprcasfinder.close()
-    os.remove('crisprcasfinder-DownloadFile?filename=CRISPRCasFinder.zip')
+    os.remove('CRISPRCasFinder.zip')
 
 print('\nend of code')
