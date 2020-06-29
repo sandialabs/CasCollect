@@ -1,0 +1,5 @@
+To run a test of CasCollect, run the following command from the CasCollect directory:
+
+python CasCollect.py --trim -fwd test_files/toy_fwd.fastq -rev test_files/toy_rev.fastq -out test_out
+
+The results will be in the directory 'test_out'.  The expected results are two operons of 6 and 7 cas genes located in 'test_out/search/ccf.gff'.
