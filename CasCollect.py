@@ -44,15 +44,15 @@ start_files = time.time()
 parser = argparse.ArgumentParser(description='Cas protein read collection, targeted assembly, and annotation '
                                              '(CasCollect) is a flexible pipeline designed for the detection of Cas '
                                              'protein genes and CRISPR direct-repeat from unassembled next-generation '
-                                             'short-read sequencing data.'
-                                             'Requires:'
-                                             'BBTools'
-                                             'Seqtk'
-                                             'FragGeneScan'
-                                             'HMMER'
-                                             'VSEARCH'
-                                             'SPAdes'
-                                             'CRISPRCasFinder')
+                                             'short-read sequencing data.\n'
+                                             'Requires:\n'
+                                             'BBTools\n'
+                                             'Seqtk\n'
+                                             'FragGeneScan\n'
+                                             'HMMER\n'
+                                             'VSEARCH\n'
+                                             'SPAdes\n'
+                                             'CRISPRCasFinder\n')
 # flags for read trimming/cleaning
 parser.add_argument('--trim', action='store_true', help='runs quality trim, remove adapters, merge overlapping reads')
 parser.add_argument('--clean', action='store_true', help='runs quality trim, remove adapters and reference matching'
