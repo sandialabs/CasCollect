@@ -382,7 +382,9 @@ elif noprot and not nucl and seed:
 else:
     print('seed determination failed')
     sys.exit()
-
+if os.stat(seed).st_size == 0:
+    print('no seeds collected, ending run')
+    sys.exit()
 
 # cycles of seed expansion
 db = 'fasta/reads.fasta'
