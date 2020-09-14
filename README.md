@@ -13,6 +13,8 @@ This pipeline relies on python and perl as well as requiring the installation of
 
 Before running, **CasCollect** will check for the necessary software in the users path and denote any missing software.  Alternatively, the **Check.py** script can be run to check for the necessary software in the users path with any missing software automatically downloaded and extracted.  The user is then responsible for installing each piece of software and ensuring it is in their path.
 
+If useful, please cite: [Podlevsky JD, Hudson CM, Jerilyn A. Timlin JA, Williams KP. 2020. CasCollect: Targeted Assembly of CRISPR-Associated Operons from High-throughput Sequencing Data. NAR Genom Bioinform 2: lqaa063.](https://academic.oup.com/nargab/article/2/3/lqaa063/5901064)
+
 ## optional arguments:
 ```
   -h, --help          show this help message and exit
